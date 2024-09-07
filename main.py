@@ -54,8 +54,8 @@ graph_sets = {
 valid_queries = {"ate", "ett", "nde", "ctfde"}
 
 parser = argparse.ArgumentParser(description="Basic Runner")
-parser.add_argument('name', help="name of the experiment")
-parser.add_argument('pipeline', help="pipeline to use")
+parser.add_argument('name', default='mle', help="name of the experiment")
+parser.add_argument('pipeline', default = 'base_pipeline', help="pipeline to use")
 
 parser.add_argument('--gen', default="ctm", help="data generating model (default: ctm)")
 
